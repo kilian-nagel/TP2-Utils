@@ -11,4 +11,9 @@ public class CommandeClear extends CommandeDocument {
         this.document.clear();
         super.executer();
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "clear: format attendu: clear";
+    }
 }

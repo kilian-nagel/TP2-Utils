@@ -19,4 +19,9 @@ public class CommandeEffacer extends CommandeDocument {
         this.document.effacer(indexStart,indexEnd);
         super.executer();
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "Format attendu : effacer;indexDebut;indexFin";
+    }
 }

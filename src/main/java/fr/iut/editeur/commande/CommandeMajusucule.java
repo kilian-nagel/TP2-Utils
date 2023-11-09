@@ -20,4 +20,9 @@ public class CommandeMajusucule extends CommandeDocument {
         this.document.majuscules(indexStart,indexEnd);
         super.executer();
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "Format attendu : majuscules;indexDebut;indexFin";
+    }
 }

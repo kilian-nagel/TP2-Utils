@@ -19,4 +19,9 @@ public class CommandeRemplacer extends CommandeDocument {
         this.document.remplacer(indexStart,indexEnd,texte);
         super.executer();
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "Format attendu : remplacer;indexDebut;indexFin;texteRemplacement";
+    }
 }
