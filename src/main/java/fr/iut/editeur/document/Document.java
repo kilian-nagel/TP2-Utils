@@ -38,6 +38,10 @@ public class Document {
         this.remplacer(0,texte.length(),"");
     }
 
+    public void inserer(int start,String insertion){
+         this.remplacer(start, insertion.length(), insertion);
+    }
+
     @Override
     public String toString() {
         return this.texte;
