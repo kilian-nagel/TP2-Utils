@@ -1,0 +1,17 @@
+name : nom_custom_workflow
+on:
+	push:
+jobs: 
+	exec-tests-quand-push:
+		runs-on : ubuntu-lastest
+		steps: 	
+			- name: deplacer-depot
+			  uses: actions/checkout@v3
+			- name: update java
+			  uses: actions/setup-java@v1
+			  with : 
+			  	distribution:'ubuntu'
+			  	java-version:'17'
+			- name: tests
+			  uses: mvn test
+			 
