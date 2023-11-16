@@ -9,7 +9,6 @@ public class DocumentTest extends TestCase {
     public void testAjouter(){
         Document d = new Document();
         d.ajouter("hi");
-        assertEquals("hi",d.toString());
-
+        assertEquals("hidada",d.toString());
     }
 }
