@@ -1,2 +1,6 @@
 target/
 .idea/
+*.js
+*.html
+*.png
+*.css
