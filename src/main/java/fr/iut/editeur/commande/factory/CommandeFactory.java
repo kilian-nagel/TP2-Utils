@@ -6,7 +6,6 @@ import fr.iut.editeur.document.Document;
 public class CommandeFactory {
 
     private static CommandeFactory instance;
-
     public static CommandeFactory getInstance() {
         if(instance == null) {
             instance = new CommandeFactory();
