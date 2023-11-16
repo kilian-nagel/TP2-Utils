@@ -5,6 +5,7 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 public class DocumentTest extends TestCase {
+
     @Test
     public void testAjouter(){
         Document d = new Document();
