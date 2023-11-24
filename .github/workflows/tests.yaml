@@ -16,15 +16,3 @@ jobs:
           java-version: '17'
       - name: tests
         run: mvn test
-  job2:
-     runs-on: ubuntu-lastest
-     steps: 
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: generer javadoc
-        run: mvn javadoc::javadoc	
-      - name: creer branche
-        uses: peaceiris/actions-gh-pages@v3 
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: './target/site/apidocs/'
