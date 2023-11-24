@@ -12,4 +12,5 @@ public class DocumentTest extends TestCase {
         d.ajouter("hi");
         assertEquals("hi",d.toString());
     }
+
 }
